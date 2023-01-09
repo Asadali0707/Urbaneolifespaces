@@ -1,0 +1,1065 @@
+<!doctype html>
+<html lang="en-US">
+
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
+	<link rel="shortcut icon" href="images/favicon.html" />
+	<title>Welcome To Urbaneo lifespaces construction company in patna</title>
+	<meta name="keywords"
+		content="Construction company patna, top builder in patna, top construction company in patna, bihar,flats in patna, builder in patna">
+	<meta name="description"
+		content="One of the Top Builders in Patna Bihar - Book Apartment in Patna Bihar through top builder of Patna Bihar Urbaneo lifespaces. urbaneo lifespaces is India's leading real estate builder.">
+    <link rel="icon" href="images/un.ico" type="image/ico">
+	<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" media="all" />
+	<link rel="stylesheet" href="css/font-awesome.min.css" type="text/css" media="all" />
+	<link rel="stylesheet" href="css/ionicons.min.css" type="text/css" media="all" />
+	<link rel="stylesheet" href="css/icon-moon.css" type="text/css" media="all" />
+	<link rel="stylesheet" href="css/magnific-popup.min.css">
+	<link rel="stylesheet" href="css/animate.css">
+	<link rel="stylesheet" href="css/owl.carousel.css" type="text/css" media="all" />
+	<link rel="stylesheet" href="css/owl.theme.css" type="text/css" media="all" />
+	<link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
+	<link rel="stylesheet" href="css/custom.css" type="text/css" media="all" />
+	<link rel="stylesheet" href="css/landmark-map.css" media="all" />
+	<link
+		href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i%7CExo:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i"
+		rel="stylesheet">
+
+	<link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/full-slider.css" rel="stylesheet">
+	<script src="vendor/jquery/jquery.min.js"></script>
+	<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+	<script language="Javascript" type="text/javascript">
+		function onlyAlphabets(e, t) {
+			try {
+				if (window.event) {
+					var charCode = window.event.keyCode;
+				}
+				else if (e) {
+					var charCode = e.which;
+				}
+				else { return true; }
+				if ((charCode > 64 && charCode < 91) || (charCode > 96 && charCode < 123) || (charCode == 46) || (charCode == 32))
+					return true;
+				else
+					return false;
+			}
+			catch (err) {
+				alert(err.Description);
+			}
+		}
+	</script>
+	<script language="javascript" type="text/javascript">
+		function numberonly(e) {
+			e = e || window.event;
+			ch = e.which || e.keyCode;
+			if (ch != null) {
+				if ((ch >= 48 && ch <= 57)
+					|| ch == 0 || ch == 8 || ch == 9 || ch == 39 || ch == 37
+					|| ch == 13 || ch == 45 || ch == 40 || ch == 41 || ch == 44 || ch == 43) return true;
+			}
+			alert('Please Enter Only Numeric Values...');
+			return false;
+		}
+		function validateform() {
+
+
+			if (document.getElementById("<%=txt_name.ClientID%>").value == "") {
+				alert("Please Enter your Name...");
+				document.getElementById("<%=txt_name.ClientID%>").focus();
+				return false;
+			}
+			if (document.getElementById("<%=txt_mobile.ClientID%>").value == "") {
+				alert("Please Enter Your Mobile...");
+				document.getElementById("<%=txt_mobile.ClientID%>").focus();
+				return false;
+			}
+
+			if (document.getElementById("<%=txt_email.ClientID%>").value != "") {
+				var emailPat = /(\".*\"|[A-Za-z]\w*)@(\[\d{1,3}(\.\d{1,3}){3}]|[A-Za-z]\w*(\.[A-Za-z]\w*)+)$/;
+				var emailid = document.getElementById("<%=txt_email.ClientID%>").value;
+				var matchArray = emailid.match(emailPat);
+				if (matchArray == null) {
+					alert(" Email_Id format is incorrect. Please try again...");
+					document.getElementById("<%=txt_email.ClientID%>").focus();
+					return false;
+				}
+			}
+			return true;
+		}
+	</script>
+	<script language="Javascript">
+		function echeck(str) {
+
+			var at = "@"
+			var dot = "."
+			var lat = str.indexOf(at)
+			var lstr = str.length
+			var ldot = str.indexOf(dot)
+			if (str.indexOf(at) == -1) {
+				alert("Invalid E-mail ID")
+				return false
+			}
+
+			if (str.indexOf(at) == -1 || str.indexOf(at) == 0 || str.indexOf(at) == lstr) {
+				alert("Invalid E-mail ID")
+				return false
+			}
+
+			if (str.indexOf(dot) == -1 || str.indexOf(dot) == 0 || str.indexOf(dot) == lstr) {
+				alert("Invalid E-mail ID")
+				return false
+			}
+
+			if (str.indexOf(at, (lat + 1)) != -1) {
+				alert("Invalid E-mail ID")
+				return false
+			}
+
+			if (str.substring(lat - 1, lat) == dot || str.substring(lat + 1, lat + 2) == dot) {
+				alert("Invalid E-mail ID")
+				return false
+			}
+
+			if (str.indexOf(dot, (lat + 2)) == -1) {
+				alert("Invalid E-mail ID")
+				return false
+			}
+
+			if (str.indexOf(" ") != -1) {
+				alert("Invalid E-mail ID")
+				return false
+			}
+
+			return true
+		}
+
+		function ValidateForm() {
+			var emailID = document.frmSample.txtEmail
+
+			if ((emailID.value == null) || (emailID.value == "")) {
+				alert("Please Enter your Email ID")
+				emailID.focus()
+				return false
+			}
+			if (echeck(emailID.value) == false) {
+				emailID.value = ""
+				emailID.focus()
+				return false
+			}
+			return true
+		}
+	</script>
+
+</head>
+
+<body>
+	<div class="site">
+		<header class="header header-fullwidth header-desktop header-sticky">
+			<div class="navbar-wrapper">
+				<div class="topbar" style="background-color:#444842;">
+					<div class="container">
+						<div class="row">
+							<div class="col-md-6 hidden-xs">
+								<div class="topmeta">
+									<i class="fa fa-envelope"></i>
+									<a href="mailto:info@urbaneolifespaces.com"> info@urbaneolifespaces.com</a>
+								</div>
+							</div>
+							<div class="col-sm-6 hidden-lg hidden-md hidden-sm">
+								<div class="topmeta">
+									<i class="fa fa-phone"></i>
+									<a href="tel:+91- 9262778999">
+										+91 - 9262778999</a>
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="topmeta topmeta-right pull-right">
+
+									<div class="popup-content box-login mfp-with-anim mfp-hide" id="popup_01">
+										<h4 class="title">Login</h4>
+										<form class="login-member-container">
+											<div class="social-login-widget">
+												<div class="social-login-connect-with">Connect with:</div>
+												<div class="social-login-provider-list">
+													<a rel="nofollow" href="javascript:void(0);"
+														title="Connect with Facebook" data-provider="Facebook">
+														<img alt="Facebook" title="Connect with Facebook"
+															src="images/icons/facebook.html">
+													</a>
+													<a rel="nofollow" href="javascript:void(0);"
+														title="Connect with Google" data-provider="Google">
+														<img alt="Google" title="Connect with Google"
+															src="images/icons/google.html">
+													</a>
+													<a rel="nofollow" href="javascript:void(0);"
+														title="Connect with Twitter" data-provider="Twitter">
+														<img alt="Twitter" title="Connect with Twitter"
+															src="images/icons/twitter.html">
+													</a>
+												</div>
+											</div>
+											<div class="login-member-wrap">
+												<div class="register-member-left">
+													<div class="item-wrap">
+														<label>User name</label>
+														<input type="text" id="user_name_login" name="user_name_login"
+															value="" placeholder="Please enter User name..."
+															class="required">
+													</div>
+													<div class="item-wrap">
+														<label>Password</label>
+														<input type="password" id="password_login" name="password_login"
+															value="" placeholder="Please enter Password..."
+															class="required">
+													</div>
+												</div>
+												<div class="login-member-action">
+													<button type="submit" name="login-account" class="button">
+														Login <i class="fa-li fa fa-spinner fa-spin hide"></i>
+													</button>
+													<p>
+														<span>Not have an Account?</span>
+														<a class="color" href="#" title="Register now!">Register
+															now!</a>
+													</p>
+												</div>
+											</div>
+										</form>
+									</div><!-- End / popup-content mfp-with-anim mfp-hide -->
+									<div class="widget widget-social">
+										<div class="social">
+											<div class="social-all">
+												<a href="https://www.facebook.com/" target="_blank" class="facebook"><i
+														class="fa fa-facebook"></i></a>
+												<a href="https://www.google.com/" target="_blank" class="google"><i
+														class="fa fa-google"></i></a>
+												<a href="https://www.twitter.com/" target="_blank" class="twitter"><i
+														class="fa fa-twitter"></i></a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="navbar navbar-default" style="background-color: #f7f7f7;">
+					<div class="container-fluid">
+						<div class="navbar-content">
+							<div class="navbar-header pull-left">
+								<button data-target=".nav-collapse" class="btn-navbar icon-menu" type="button">
+									<i class="fa fa-bars"></i>
+								</button>
+								<a href="https://www.shalimargroup.co.in/" class="navbar-brand" target="_blank" title="">
+									<img style="float:right;margin-top:-15px;height:108px;    
+									<img class="logo-img logo-normal" src="images/logo.jpeg" alt="" />
+								</a>
+							</div>
+							<div class="pull-right navbar-meta meta-phone">
+								<div class="meta-content">
+									<i class="fa fa-mobile"></i>
+									<div class="meta-desc">
+										<span><a href="tel:+91 9262778999"> +91 - 9262778999</a></span>
+									</div>
+								</div>
+
+								<span>
+									<img style="float:right;margin-top:7px;margin-right:-40px;  "
+										class="logo-img logo-normal" src="images/logo1.jpeg" width="200px" height="80px"
+										alt="" />
+								</span>
+							</div>
+
+
+							<nav class="pull-right main-menu center">
+								<ul class="nav-collapse navbar-nav">
+									<li class="current">
+										<a href="index.html">Home</a>
+
+										<i class="fa fa-angle-down"></i>
+									</li>
+									<li>
+										<a href="#">About Us</a>
+										<ul class="sub-menu">
+											<li><a href="about.html">About Us</a></li>
+											<li><a href="mission-vision.html">Mission & Vision</a></li>
+											<li><a href="Managing Director.html"> Managing Director</a></li>
+											<li><a href="our-strength.html">Our Strength</a></li>
+											<li><a href="director.html">Director</a></li>
+											<li><a href="why-urban.html">Why urbaneo lifespaces</a></li>
+
+
+										</ul>
+										<i class="fa fa-angle-down"></i>
+									</li>
+									<li>
+										<a href="#">Projects</a>
+										<ul class="sub-menu">
+											<li><a href="running-project.html">Current Projects</a></li>
+											<li><a href="construction-update-crescent.html">Construction Update
+													Crescent</a></li>
+										</ul>
+										<i class="fa fa-angle-down"></i>
+									</li>
+									<li>
+										<a href="#">Utilities</a>
+										<ul class="sub-menu">
+											<li><a href="emi-calculator.html">EMI Calculator</a></li>
+											<li><a href="loan-calculator.html">Loan Calculator</a></li>
+											<li><a href="download.html">Download</a></li>
+											<li><a href="gallery.html">Photo Gallery</a></li>
+
+										</ul>
+										<i class="fa fa-angle-down"></i>
+									</li>
+									<li class="current"><a href="enquiry.html">Enquiry</a><i
+											class="fa fa-angle-down"></i></li>
+									<li class="current"><a href="contact.html">Contact Us</a><i
+											class="fa fa-angle-down"></i></li>
+
+
+								</ul>
+							</nav>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<div id="main">
+			<header>
+				<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+					<ol class="carousel-indicators">
+						<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+						<!--<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+          <!--<li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>-->
+					</ol>
+					<div class="carousel-inner" role="listbox">
+						<div class="carousel-item active" style="background-image: url('images/slider1011.jpg')"
+							style="width:100%">
+						</div>
+
+
+						<div class="carousel-item" style="background-image: url('images/slidernew.jpg')"
+							style="width:100%">
+
+						</div>
+
+
+
+						<!--<div class="carousel-item" style="background-image: url('images/slider22.jpg')" style="width:100%">
+            
+          </div>-->
+						<!--<div class="carousel-item" style="background-image: url('images/slider1.jpg')" style="width:100%">
+            
+          </div>-->
+					</div>
+					<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+						<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+						<span class="sr-only">Previous</span>
+					</a>
+					<a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+						<span class="carousel-control-next-icon" aria-hidden="true"></span>
+						<span class="sr-only">Next</span>
+					</a>
+				</div>
+			</header>
+
+			<div class="section pt-9 pb-9">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12">
+							<div class="section-title">
+								<div class="wrap-title">
+									<h3 class="title">
+										<span class="first-word">Latest</span> Projects
+									</h3>
+
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-8">
+							<div class="listing-properties">
+								<div class="row mb-1">
+
+								</div>
+								<!--<div class="row">
+											<div class="col-sm-6">
+											<div class="property-item style-6">
+												<div class="action">
+													<div class="price">
+														<a href="lotus-abode.html"><span class="amount">LOTUS PLAZA </span></a>
+													</div>
+												</div>
+												<div class="item-head">
+													<h4 class="item-title">
+														<a href="#" title="urbaneolifespaces">
+															Near bypass
+														</a>
+														<p>RERA No: BRERAP00041-5/68/R-1394/2022</p>
+													</h4>
+												</div>
+												<div class="item-featured">
+													<a href="lotus-abode.html" title="Nutan Construction">
+														<img src="images/lp1.jpg" alt="Nutan Construction">
+													</a>
+												</div>
+												<div class="info">
+													<div class="col-xs-6 p-0">
+														<div class="info-items">
+															
+															<div class="info-item-2"> <b>2  </b> <br> BHK </div> 
+															<div class="info-item-3"> <b>3  </b> <br> BHK </div>
+														</div>
+													</div>
+													<!--<div class="col-xs-4 p-1 pull-left fz-12 photocount"><a href="lotus-abode.html" class="btn btn-info">Details</a>
+													
+														
+													</div>
+											<div class="col-xs-2 p-1 pull-left fz-12 photocount">
+													
+														<a data-toggle="tooltip" data-placement="top" title=""  href="#" target="_blank">
+															<i class="fa fa-external-link fa-3x"></i>
+														</a>
+													</div>
+													
+												</div>
+												
+											</div>
+										</div>-->
+
+								<!--<div class="col-sm-6">
+											<div class="property-item style-6">
+												<div class="action">
+													<div class="price">
+														<a href="#"><span class="amount">LOTUS GARDEN </span></a>
+													</div>
+												</div>
+												<div class="item-head">
+													<h4 class="item-title">
+														<a href="#" title="Nutan Construction">
+															Right from Gola Road T-Point
+														</a>
+														<p>RERA No: BRERAP00041-6/105/R-1410/2022</p>
+													</h4>
+												</div>
+												<div class="item-featured">
+													<a href="#" title="Nutan Construction">
+														<img src="images/lg101.jpg" alt="Nutan Construction">
+													</a>
+												</div>
+												<div class="info">
+													<div class="col-xs-6 p-0">
+														<div class="info-items">
+															
+															<div class="info-item-2"> <b>2  </b> <br> BHK </div> 
+															<div class="info-item-3"> <b>3  </b> <br> BHK </div>
+														</div>
+													</div>
+													<div class="col-xs-4 p-1 pull-left fz-12 photocount"><a href="#" class="btn btn-info">Details</a>
+													
+														
+													</div>
+											<div class="col-xs-2 p-1 pull-left fz-12 photocount">
+													
+														<a data-toggle="tooltip" data-placement="top" title=""  href="#" target="_blank">
+															<i class="fa fa-external-link fa-3x"></i>
+														</a>
+													</div>
+													
+												</div>
+												
+											</div>
+										</div>	
+										
+										
+										
+										<!--div class="col-sm-6">
+											<div class="property-item style-6">
+												<div class="action">
+													<div class="price">
+														<a href="lotus-abode.php"><span class="amount">LOTUS ABODE (Completed)</span></a>
+													</div>
+												</div>-->
+								<!--<div class="item-head">
+													<h4 class="item-title">
+														<a href="#" title="urbaneolifespaces">
+															Bypass, Near lara petrol pump,<br>Dist - Patna
+														</a>-->
+								<!--<p>RERE NO. : BRERAP00041-1/17/R4/2018</p>				
+													</h4>
+												</div>-->
+								<!--<div class="item-featured">
+													<a href="lotus-abode.php" title="Nutan Construction">
+														<img src="images/property_4.jpg" alt="Nutan Construction">
+													</a>
+												</div>
+												<div class="info">
+													<div class="col-xs-6 p-0">
+														<div class="info-items">
+															<div class="info-item-1"> <b>2 </b> <br> Block</div>
+															<div class="info-item-2"> <b>2  </b> <br> BHK </div> 
+															<div class="info-item-3"> <b>3  </b> <br> BHK </div>
+														</div>
+													</div>
+													<div class="col-xs-4 p-1 pull-left fz-12 photocount"><a href="lotus-abode.php" class="btn btn-info">Details</a>
+													
+														
+													</div>
+											<div class="col-xs-2 p-1 pull-left fz-12 photocount">
+													
+														<a data-toggle="tooltip" data-placement="top" title=""  href="http://lotusabode.in/" target="_blank">
+															<i class="fa fa-external-link fa-3x"></i>
+														</a>
+													</div>
+													
+												</div>
+												
+											</div>
+										</div-->
+								<!--div class="col-sm-6">
+											<div class="property-item style-6">
+												<div class="action">
+													<div class="price">
+														<a href="lotus-abode.php"><span class="amount">LOTUS ABODE</span></a>
+													</div>
+												</div>
+												<div class="item-head">
+													<h4 class="item-title">
+														<a href="#" title="Nutan Construction">
+															Sainik Colony, Gola Road, Bailey Road,<br> Sub division : Danapur, Dist - Patna
+														</a>
+													</h4>
+												</div>
+												<div class="item-featured">
+													<a href="lotus-abode.php" title="Nutan Construction">
+														<img src="images/property_10.jpg" alt="Nutan Construction">
+													</a>
+												</div>
+												<div class="info">
+													<div class="col-xs-6 p-0">
+														<div class="info-items">
+															<div class="info-item-1"> <b>2 </b> <br> Block</div>
+															<div class="info-item-2"> <b>2  </b> <br> BHK </div> 
+															<div class="info-item-3"> <b>3  </b> <br> BHK </div>
+														</div>
+													</div>
+													<div class="col-xs-4 p-1 pull-left fz-12 photocount"><a href="lotus-abode.php" class="btn btn-info">Details</a>
+													
+														
+													</div>
+											<div class="col-xs-2 p-1 pull-left fz-12 photocount">
+													
+														<a data-toggle="tooltip" data-placement="top" title=""  href="http://lotusabode.in/" target="_blank">
+															<i class="fa fa-external-link fa-3x"></i>
+														</a>
+													</div>
+													
+												</div>
+												
+											</div>
+										</div-->
+								<div class="col-sm-6">
+									<div class="property-item style-6">
+										<div class="action">
+											<div class="price">
+												<a href="crescent.html"><span class="amount">CRESCENT (Newly
+														Launched)</span></a>
+											</div>
+										</div>
+										<div class="item-head">
+											<h4 class="item-title">
+												<a href="crescent.html" title="urbaneolifespaces">
+													Residential Enclave at Bhikhachak , <br>By-Pass road , Anishabad ,
+													Patna
+												</a>
+												<p>Rera No. : BRERAP00041-3/1097/R-830/2019</p>
+											</h4>
+										</div>
+										<div class="item-featured">
+											<a href="crescent.html" title="CRESCENT (urbaneolifespaces Project)">
+												<img src="images/cre-img.jpg"
+													alt="CRESCENT (Nutan Construction Project)">
+											</a>
+
+										</div>
+										<div class="info">
+											<div class="col-xs-9 p-0">
+												<div class="info-items">
+													<div class="info-item-1"> <b>2</b> <br> Block </div>
+													<div class="info-item-2"> <b>2</b> <br> BHK </div>
+													<div class="info-item-3"> <b>3</b> <br> BHK </div>
+												</div>
+											</div>
+											<div class="col-xs-3 p-0 pull-right fz-12 photocount"><a
+													href="crescent.html" class="btn btn-info">Details</a></div>
+										</div>
+
+									</div>
+								</div>
+								<div class="col-md-12">
+									<div class="section-title">
+										<div class="wrap-title">
+											<h3 class="title">
+												<span class="first-word">Proposed </span> site
+											</h3>
+
+										</div>
+									</div>
+								</div>
+
+
+							</div>
+
+						</div>
+					</div>
+
+
+
+
+
+
+
+					<div class="col-md-4">
+						<script language="Javascript" type="text/javascript">
+							function onlyAlphabets(e, t) {
+								try {
+									if (window.event) {
+										var charCode = window.event.keyCode;
+									}
+									else if (e) {
+										var charCode = e.which;
+									}
+									else { return true; }
+									if ((charCode > 64 && charCode < 91) || (charCode > 96 && charCode < 123) || (charCode == 46) || (charCode == 32))
+										return true;
+									else
+										return false;
+								}
+								catch (err) {
+									alert(err.Description);
+								}
+							}
+						</script>
+						<script language="javascript" type="text/javascript">
+							function numberonly(e) {
+								e = e || window.event;
+								ch = e.which || e.keyCode;
+								if (ch != null) {
+									if ((ch >= 48 && ch <= 57)
+										|| ch == 0 || ch == 8 || ch == 9 || ch == 39 || ch == 37
+										|| ch == 13 || ch == 45 || ch == 40 || ch == 41 || ch == 44 || ch == 43) return true;
+								}
+								alert('Please Enter Only Numeric Values...');
+								return false;
+							}
+							function validateform() {
+
+
+								if (document.getElementById("<%=txt_name.ClientID%>").value == "") {
+									alert("Please Enter your Name...");
+									document.getElementById("<%=txt_name.ClientID%>").focus();
+									return false;
+								}
+								if (document.getElementById("<%=txt_mobile.ClientID%>").value == "") {
+									alert("Please Enter Your Mobile...");
+									document.getElementById("<%=txt_mobile.ClientID%>").focus();
+									return false;
+								}
+
+								if (document.getElementById("<%=txt_email.ClientID%>").value != "") {
+									var emailPat = /(\".*\"|[A-Za-z]\w*)@(\[\d{1,3}(\.\d{1,3}){3}]|[A-Za-z]\w*(\.[A-Za-z]\w*)+)$/;
+									var emailid = document.getElementById("<%=txt_email.ClientID%>").value;
+									var matchArray = emailid.match(emailPat);
+									if (matchArray == null) {
+										alert(" Email_Id format is incorrect. Please try again...");
+										document.getElementById("<%=txt_email.ClientID%>").focus();
+										return false;
+									}
+								}
+								return true;
+							}
+						</script>
+						<script language="Javascript">
+							function echeck(str) {
+
+								var at = "@"
+								var dot = "."
+								var lat = str.indexOf(at)
+								var lstr = str.length
+								var ldot = str.indexOf(dot)
+								if (str.indexOf(at) == -1) {
+									alert("Invalid E-mail ID")
+									return false
+								}
+
+								if (str.indexOf(at) == -1 || str.indexOf(at) == 0 || str.indexOf(at) == lstr) {
+									alert("Invalid E-mail ID")
+									return false
+								}
+
+								if (str.indexOf(dot) == -1 || str.indexOf(dot) == 0 || str.indexOf(dot) == lstr) {
+									alert("Invalid E-mail ID")
+									return false
+								}
+
+								if (str.indexOf(at, (lat + 1)) != -1) {
+									alert("Invalid E-mail ID")
+									return false
+								}
+
+								if (str.substring(lat - 1, lat) == dot || str.substring(lat + 1, lat + 2) == dot) {
+									alert("Invalid E-mail ID")
+									return false
+								}
+
+								if (str.indexOf(dot, (lat + 2)) == -1) {
+									alert("Invalid E-mail ID")
+									return false
+								}
+
+								if (str.indexOf(" ") != -1) {
+									alert("Invalid E-mail ID")
+									return false
+								}
+
+								return true
+							}
+
+							function ValidateForm() {
+								var emailID = document.frmSample.txtEmail
+
+								if ((emailID.value == null) || (emailID.value == "")) {
+									alert("Please Enter your Email ID")
+									emailID.focus()
+									return false
+								}
+								if (echeck(emailID.value) == false) {
+									emailID.value = ""
+									emailID.focus()
+									return false
+								}
+								return true
+							}
+						</script>
+
+						<div class="sidebar">
+							<div class="widget">
+								<h3 class="widget-title">REQUEST A CALL BACK FOR FLAT</h3>
+
+								<div class="mb-1">
+									<form class="quick-search-form" action="javascript:detail()" reset(); >
+										<fieldset>
+											<div class="row mb-1">
+												<div class="col-xs-12">
+													<label class="field-label"> Name </label>
+													<input class="form-control" name="name" id="name"
+														onKeyPress="return onlyAlphabets(event,this)"
+														placeholder="Enter Your Name" type="text" required>
+												</div>
+											</div>
+											<div class="row mb-1">
+												<div class="col-xs-12">
+													<label class="field-label"> Contact No </label>
+													<input class="form-control" name="contact" id="contact"
+														onkeypress="return numberonly(event);" maxlength="10"
+														placeholder="Enter Your Contact No" type="text" required>
+												</div>
+											</div>
+											<div class="row mb-1">
+												<div class="col-xs-12">
+													<label class="field-label">Apartment </label>
+													<input class="form-control" name="project" id="project"
+														placeholder="Cresscent/Kohinoor" type="text" required>
+												</div>
+											</div>
+											<div class="row mb-1">
+												<div class="col-xs-12">
+													<label class="field-label"> Purpose </label>
+													<textarea class="form-control" cols="4" name="purpose" id="sms"
+														placeholder="Enter Your Purpose" type="text"
+														required></textarea>
+												</div>
+											</div>
+
+											<div class="row mt-2">
+												<div class="col-xs-12">
+													<input id="detailsForm" class="button" type="submit" value="Submit">
+												</div>
+											</div>
+										</fieldset>
+										<script src="https://code.jquery.com/jquery-3.6.1.js"
+											integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="
+											crossorigin="anonymous"></script>
+										<script>
+											function detail() {
+												$.ajax({
+													url: "https://formsubmit.co/ajax/info@urbaneolifespaces.com",
+													method: "POST",
+													data: {
+														name: $('#name').val(),
+														Contact_No : jQuery('#contact').val(),
+														Project_Name : jQuery('#project').val(),
+														Purpose : jQuery('#sms').val()
+													},
+													dataType: "json"
+												}).then(x => {
+													$("#detailsForm").val( "Request Has Been Raised");
+													$("#detailsForm").attr('disabled',true);
+													console.log("Form SUbmitted");
+													//form rest 
+													// message form is submitted successfully
+												});
+											}
+										</script>
+									</form>
+								</div>
+								
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="section section-overlay section-bg-11">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-8 " style="padding-top:15px;">
+
+						<h3 class="title">Our Home Loan Bankers</h3>
+
+						<img src="images/loan2.jpg">
+						<img src="images/loan1.jpg">
+						<img src="images/loan3.jpg">
+						<img src="images/loan4.jpg">
+
+					</div>
+					<div class="col-md-4 ads-service">
+						<div class="ads-phone">
+
+							<div class="ads-desc">
+								Email NOW<br>
+								<a href="mailto:info@urbaneolifespaces.com">info@urbaneolifespaces.com</a>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="section mb-6" style="background:#fff;">
+			<div class="container" style="padding:50px 0px 50px 0px;">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="section-title">
+							<div class="wrap-title">
+								<!--<h5 class="title">
+									<span class="first-word">Welcome </span> to urbaneo lifespaces
+								</h5>-->
+
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-9 col-sm-6">
+						<div class="service-item">
+
+
+							<!--<p>urbaneo lifepsaces was incorporated in the year 2019 by Mr. Syed Saba Ashraf, first
+								generation entrepreneur who came back to his roots in patna after spending 10+ years in
+								the Middle East working with the most reknowned British construction giant "Carillion
+								plc" and "Al-Futtaim Group" based in UAE and KSA. Today, the company enjoys a strong
+								presence in Patna and has made its position as one of the technically advanced companies
+								in the Real Estate Industry. The company is one of the fastest growing entities in the
+								realty sector with a difference that offers luxury for reasonable costs, excellent
+								customer care levels with highest customer satisfaction.</p>-->
+						</div>
+					</div>
+
+					<div class="col-md-3 col-sm-6">
+						<div class="service-item" style="padding-left:80px;">
+							<div class="service-icon icon-mapmarker">
+								<span class="icon icon-safe-house"></span>
+							</div>
+
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12">
+						<div class="btlink">
+							<a class="readmore" href="about.html"> </a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+
+		<div class="section section-bg-6 section-overlay section-fixed mt-15">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-8">
+						<div class="mailchimp">
+							<h3 class="title">RERA</h3><br>
+							<h5 style="color:#fff; font-size:22px;">REAL ESTATE REGULATORY AUTHORITY, BIHAR</h5>-->
+							<span class="sub-title">Registration Certificate of Project </span>
+							<p style="color:#fff">This registration is granted under section 5 to the following project
+								under</p>
+							<table style="color:#fff;" class="table">
+								<tbody>
+									<tr>
+										<td>Project registration number</td>
+										<td width="10px;">:</td>
+										<td>BRERAP00041-1/17/R4/2018</td>
+									</tr>
+									<tr>
+										<td>Project Name</td>
+										<td>:</td>
+										<td>Crescent (Ongoing Project) </td>
+									</tr>
+									<tr>
+										<td>Project Address</td>
+										<td>:</td>
+										<td>Near LARA petrol pump-, Dist - Patna
+										</td>
+									</tr>
+							</table>
+							</table>
+
+
+						</div>
+					</div>
+					<div class="col-md-4" style="padding:85px 100px 0px 100px">
+						<img src="images/rera-img.png"><br><br>
+						<p style="padding-left:55px;"><a style="background:#000" href="#"
+								class="btn btn-info btn-sm center">Click Here</a>
+						<p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<style>
+		#hit-counter {
+			font-family: serif;
+			font-size: 15px;
+			background-color: #000;
+			color: greenyellow;
+			padding: 3px 6px;
+		}
+	</style>
+	<footer class="footer">
+		<div class="main-footer">
+			<div class="colophon wigetized">
+				<div class="container">
+					<div class="row">
+						<div class="footer-column-item col-md-3 col-sm-6">
+							<div class="widget widget_text">
+								<h4 class="widget-title">About urbaneo lifespaces</h4>
+								<div class="textwidget">
+
+									<ul class="contact-info">
+										<li><i class="fa fa-map-marker"></i> Urbaneo lifespaces,near bypass road
+											Anishbad Patna-800002. <span style="padding-left:52px;"></span></li>
+										<li><i class="fa fa-phone"></i>+91 - 9262778999</li>
+										<li><i class="fa fa-envelope"></i>info@urbaneolifespaces.com</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="footer-column-item col-md-3 col-sm-6">
+							<div class="widget widget_text">
+								<h4 class="widget-title">Opening time</h4>
+								<div class="textwidget">
+									<ul class="open-info">
+										<li>Mon - Sat: 10:30AM - 6:30PM</li>
+
+										<li>Sun: Closed</li>
+
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="footer-column-item col-md-3 col-sm-6">
+							<div class="widget widget_nav_menu">
+								<h4 class="widget-title">Useful Link</h4>
+								<ul class="menu">
+									<li><a href="index.html">Home</a></li>
+									<li><a href="about.html">About US</a></li>
+									<li><a href="running-project.html">Projects</a></li>
+									<li><a href="contact.html">Contact Support</a></li>
+									<li><a href="enquiry.html">Enquiry</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="footer-column-item col-md-3 col-sm-6">
+							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3598.6863566638735!2d85.09619421485363!3d25.58209958371876!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39ed575edf1e8fff%3A0xfc155b4f700dbbb7!2sShalimar%20Cold%20Storage!5e0!3m2!1sen!2sin!4v1670731497370!5m2!1sen!2sin" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="copyright">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-4">
+						© 2019. Copyright. Urbaneo lifespaces
+					</div>
+					<div class="col-sm-4">
+					</div>
+					<div class="col-sm-4">
+						<div class="footer-social text-right text-center-xs">
+							Developed By : <a href="" target="_blank" class="facebook">Naruto Uzumaki(Ali)</a>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	</div>
+	<div id="go-to-top" class="go-to-top">
+		<i class="fa fa-angle-up"></i>
+	</div>
+
+	<!--<script
+		src="http://maps.googleapis.com/maps/api/js?key=AIzaSyDwtb7cR_XBPEvxtQ_Yq3_xKsOWQroCTPA&amp;sensor=true&amp;v=3.exp&amp;libraries=places"></script>-->
+	<script src="js/jquery.min.js"></script>
+	<script src="js/jquery-migrate.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/bootstrap-progressbar.min.js"></script>
+	<script src="js/modernizr-2.7.1.min.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/jQuery.headroom.js"></script>
+	<script src="js/headroom.min.js"></script>
+	<script src="js/off-cavnass.js"></script>
+	<script src="js/jquery.magnific-popup.min.js"></script>
+	<script src="js/infobox.js"></script>
+	<script src="js/markerclusterer.js"></script>
+	<script src="js/property.js"></script>
+	<script src="js/data-nooGmapL10n.js"></script>
+	<script src="js/script.js"></script>
+
+	<script src="js/core.min.js"></script>
+	<script src="js/widget.min.js"></script>
+	<script src="js/mouse.min.js"></script>
+	<script src="js/slider.min.js"></script>
+	<script src="js/jquery.ui.touch-punch.js"></script>
+	<script src="js/price-slider.js"></script>
+
+
+
+</body>
+
+</html>
